@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sync is a landing page HTML template built with Bootstrap 4 for presenting mobile apps to the online audience and for getting visitors to become users.">
+    <meta name="author" content="Inovatik">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Webpage Title -->
+    <title>Adventure Time</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Sync</a> -->
+
+            <!-- Image Logo -->
+            <a class="navbar-brand logo-image" href="index.html"><img src="data:image/jpeg;base64,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" alt="alternative"></a> 
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#description">INFORMACION <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">HERRAMIENTAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#screens">DISEÑOS</a>
+                    </li>
+
+                    <!-- Dropdown Menu -->          
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle page-scroll" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">EXTRA</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="article-details.html"><span class="item-text">CREADOR</span></a>
+                            <div class="dropdown-divider"></div>
+                            
+                        </div>
+                    </li>
+                    <!-- end of dropdown menu -->
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm page-scroll" href="#download">FINAL</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-container">
+                        <h1>BLESSING BY DESIGN</h1>
+                        <p class="p-large p-heading">Somos una compañia con la cual podras llegar a tener ese alcance que necesitas para tu negocio impulsandolo de manera virtual</p>
+                      
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="image-container">
+                        <img class="img-fluid" src="http://cdn.shopify.com/s/files/1/0054/9879/8198/files/BBDlogo_web_60e81f2b-0267-4096-9c1c-5e0163bc2d1c.png?height=628&pad_color=ffffff&v=1613179351&width=1200" alt="alternative">
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <div class="deco-white-circle-1">
+            <img src="images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-1 -->
+        <div class="deco-white-circle-2">
+            <img src="images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-2 -->
+        <div class="deco-blue-circle">
+            <img src="images/decorative-blue-circle.svg" alt="alternative">
+        </div> <!-- end of deco-blue-circle -->
+        <div class="deco-yellow-circle">
+            <img src="images/decorative-yellow-circle.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+        <div class="deco-green-diamond">
+            <img src="images/decorative-green-diamond.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+    </header> <!-- end of header -->
+    <!-- end of header -->
+
+
+
+    <!-- Description 1 -->
+    <div id="description" class="basic-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="https://marketplace-cdn.atlassian.com/files/422562e8-0358-462a-8dca-301eeb611c93?fileType=image&mode=full-fit" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="text-container">
+                        <h2>¿Que realizamos? </h2>
+                        <p>Nos encargaremos de todo lo que corresponde a la creacion planeacion y diseño de tu pagina web, rellizando diseños que implementen lo necesario para tu negocio, html y css que seria lo basico, asi como si lo necesitas implementacion de SQL, PHP y JavaScript o consumo de API`s</p>
+                        
+                        <a class="btn-solid-reg popup-with-move-anim" href="#description-1-details-lightbox">Info.</a>
+                    </div> <!-- end of text-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-1 -->
+    <!-- end of description 1 -->
+
+    
+    <!-- Description 1 Details Lightbox -->
+	<!-- Details Lightbox -->
+	<div id="description-1-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-8">
+                <div class="image-container">
+                    <img align="center" class="img-fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqtFJhp0-dqgU4kcThLIrhegD6ef3NJUv0RFqMkzeZ9WAagLZf66w5gDswGxJH_hBNDQQ&usqp=CAU" alt="alternative">
+                </div> <!-- end of image-container -->
+			</div>
+			<div class="col-lg-4">
+                <h3>Informacion adicional</h3>
+				<hr>
+                <p>Con estas herramientas vamos a generar todo lo que necesitas para implementar una pagina web llamativa y que contenga la informacion necesaria que deseas que se vea a tu publico </p>
+               
+                
+                </a> <button class="btn-outline-reg mfp-close as-button" type="button">BACK</button>
+			</div>
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox -->
+    <!-- end of description 1 details lightbox -->
+
+
+
+    <!-- Description 2 -->
+    <div class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="tabs-container">
+
+                        <!-- Tabs Links -->
+                        <ul class="nav nav-tabs" id="cedoTabs" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="far fa-clock"></i>Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-list"></i>Trayectoria</a>
+                            </li>
+                        </ul>
+                        <!-- end of tabs links -->
+                        
+                        <!-- Tabs Content -->
+                        <div class="tab-content" id="cedoTabsContent">
+                            <!-- Tab -->
+                            <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                                <p><strong>Inicio</strong> Nosotros nos encargaremos de quiarte y darte las nociones que imlementaremos y tendremos comunicacion contigo a la hora de la creacion del diseño esperado</p>
+                                <ul class="list-unstyled li-space-lg">
+                                    <li class="media">
+                                        <i class="far fa-check-square"></i>
+                                        <div class="media-body">Esto con el fin de que te sientas contento con el producto final </div>
+                                    </li>
+                                </ul>
+                                <a class="btn-solid-reg page-scroll" href="terms-conditions.html">TERMS</a> <a class="btn-outline-reg page-scroll" href="privacy-policy.html">PRIVACY</a>
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+
+                            <!-- Tab -->
+                            <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
+                                <p>Actualmente nos encontramos en proceso de crecimieto sin embargo contamos con los conocimientos necesarios para llevar proyectos de la mejor manera y con tiempos limites para no abusar de los tiempos de entrega</p>
+                            </div> <!-- end of tab-pane -->
+                            <!-- end of tab -->
+
+                            <!-- Tab -->
+                            
+                        </div> <!-- end of tab-content -->
+                        <!-- end of nav tabs content -->
+                    
+                    </div> <!-- end of tabs-container -->
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="image-container">
+                        <img class="img-fluid" src="https://c8.alamy.com/compes/2ehtmt3/diseno-web-y-desarrollo-de-ideas-de-negocios-en-internet-o-poster-de-servicios-independientes-tecnologia-de-sitios-web-vectoriales-iconos-de-archivos-de-usuario-en-el-ordenador-portatil-2ehtmt3.jpg" alt="alternative">
+                    </div> <!-- end of image-container -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of tabs -->
+    <!-- end of description 2 -->
+
+
+    <!-- Features -->
+    <div id="features" class="basic-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Herramientas</h2>
+                    <p class="p-heading">Hare una breve introduccion acerca de los personajes que tendran mas releancia a lo largo de la serie</p>
+                </div> <!-- end of div -->
+            </div> <!-- end of div -->
+            <div class="row">
+                <div class="col-lg-4">
+                    <ul class="list-unstyled li-space-lg first">
+                        <li class="media">
+                            <span class="fa-stack">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-users fa-stack-1x"></i>
+                            </span>
+                            <div class="media-body">
+                                <h4>HTML</h4>
+                                <p>Como comentario es la herramienta que genera el esqueleto de la pagina web</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="fa-stack">
+                                <i class="fas fa-circle fa-stack-2x green"></i>
+                                <i class="fas fa-dog fa-stack-1x"></i>
+                            </span>
+                            <div class="media-body">
+                                <h4>CSS</h4>
+                                <p>Esta es con la que nosostros haremos el proceso de diseño dandole estilos colores etc, para generar un a buena interfaz en la pagina</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="fa-stack">
+                                <i class="fas fa-circle fa-stack-2x red"></i>
+                                <i class="fas fa-crown fa-stack-1x"></i>
+                            </span>
+                            <div class="media-body">
+                                <h4>JavaScript</h4>
+                                <p>COn esta nosotros podremos añadir animaciones y no tan solo eso sino generar operaciones responsiv para hacer mas intuitiva la plataforma</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <img class="img-fluid" src="https://ih1.redbubble.net/image.4383296091.3502/poster,504x498,f8f8f8-pad,600x600,f8f8f8.u1.jpg" alt="alternative">
+                </div> <!-- end of col -->
+                <div class="col-lg-4">
+                    <ul class="list-unstyled li-space-lg">
+                        <li class="media">
+                            <span class="fa-stack">
+                                <i class="fas fa-circle fa-stack-2x yellow"></i>
+                                <i class="fab fa-fort-awesome fa-stack-1x"></i>
+                            </span>
+                            <div class="media-body">
+                                <h4>PHP</h4>
+                                <p>Manera en la cual podemos enlazar nuestra pagina con una base de datos ya sea alojada en una nube o de manera local</p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="fa-stack">
+                                <i class="fas fa-circle fa-stack-2x blue"></i>
+                                <i class="fas fa-ghost fa-stack-1x"></i>
+                            </span>
+                            <div class="media-body">
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </li>
+                        <li class="media">
+                            <span class="fa-stack">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-skull fa-stack-1x"></i>
+                            </span>
+                            <div class="media-body">
+                                <h4></h4>
+                                <p></p>
+                            </div>
+                        </li>
+                    </ul>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of basic-2 -->
+    <!-- end of features -->
+
+
+    <!-- Screenshots -->
+    <div id="screens" class="slider">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    
+                    <!-- Image Slider -->
+                    <div class="slider-container">
+                        <div class="swiper-container image-slider">
+                            <div class="swiper-wrapper">
+                                
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/navidad.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="https://www.hostinger.es/tutoriales/wp-content/uploads/sites/7/2020/06/Screenshot-6-1024x435.png" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/vida.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="https://www.staffdigital.pe/blog/wp-content/uploads/00_c%C3%B3mo_crear_un_dise%C3%B1o_web_moderno.jpg" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/pinguino.png" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="https://thumbs.dreamstime.com/z/dise%C3%B1o-creativo-de-la-plantilla-del-sitio-web-114087350.jpg" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                <div class="swiper-slide">
+                                    <a href="images/muerte.jpg" class="popup-link" data-effect="fadeIn">
+                                        <img class="img-fluid" src="https://thumbs.dreamstime.com/b/dise%C3%B1o-creativo-de-la-plantilla-del-sitio-web-114087334.jpg" alt="alternative">
+                                    </a>
+                                </div>
+                                <!-- end of slide -->
+
+                                <!-- Slide -->
+                                
+                                <!-- end of slide -->
+                                
+                            </div> <!-- end of swiper-wrapper -->
+
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <!-- end of add arrows -->
+
+                        </div> <!-- end of swiper-container -->
+                    </div> <!-- end of slider-container -->
+                    <!-- end of image slider -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of slider -->
+    <!-- end of screenshots -->
+<h5 ALIGN="CENTER">POSIBILIDAD DE IMPLEMENTAR AUDIO EN LA PAGINA</h5>
+<center>
+    <audio autoplay controls>
+        <source src="images/cowboy-bebop-opening-tank.mp3" type="audio/mp3" autoplay>
+            Tu navegador no soporta audio HTML5.
+    </audio>
+
+    </center>
+    <h5 align="center">CAPITULO DE INTRODUCCION</h5>
+    <center>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/7N2v0bpNFKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </center>
+    <!-- Testimonials -->
+    <div class="cards-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2>Work Group</h2>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+            <div class="row">
+                <div class="col-lg-12">
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <hr class="testimonial-line">
+                        </div>
+                        <div class="card-body">
+                            <div class="testimonial-text"> </div>
+                            <div class="testimonial-author">Daniel Ramirez </div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <hr class="testimonial-line">
+                        </div>
+                        <div class="card-body">
+                            <div class="testimonial-text"></div>
+                            <div class="testimonial-author">Hugo Zapata</div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                    <!-- Card -->
+                    <div class="card">
+                        <div class="card-image">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                            <hr class="testimonial-line">
+                        </div>
+                        <div class="card-body">
+                            <div class="testimonial-text"></div>
+                            <div class="testimonial-author">Luis Caicedo</div>
+                        </div>
+                    </div>
+                    <!-- end of card -->
+
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+           
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of cards-2 -->
+    <!-- end of testimonials -->
+
+    <!-- Download -->
+    <div id="download" class="basic-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="image-container">
+                        <img class="img-fluid" src="images/jake-adventure-time.gif" alt="alternative">
+
+                    </div> <!-- end of image-container -->
+                    <p class="p-large">Te esperamos con ansias de que seas uno de nuestros clientes los cuales se encontraran muy satisfechos con nuestro trabajo </p>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+        <div class="deco-white-circle-1">
+            <img src="images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-1 -->
+        <div class="deco-white-circle-2">
+            <img src="images/decorative-white-circle.svg" alt="alternative">
+        </div> <!-- end of deco-white-circle-2 -->
+        <div class="deco-blue-circle">
+            <img src="images/decorative-blue-circle.svg" alt="alternative">
+        </div> <!-- end of deco-blue-circle -->
+        <div class="deco-yellow-circle">
+            <img src="images/decorative-yellow-circle.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+        <div class="deco-green-diamond">
+            <img src="images/decorative-green-diamond.svg" alt="alternative">
+        </div> <!-- end of deco-yellow-circle -->
+    </div> <!-- end of basic-3 -->
+    <!-- end of download -->
+    <center>
+    <formaction=“ FORMULARIO"target="_blank">
+                        <form <input información" ><p>Ingresa tu nombre completo:</p> <input type </form >
+                            <form <input información" ><p>Ingresa tu numero de contacto:</p> <input type </form >
+                                <form <input información" ><p>Ingresa tu correo:</p> <input type </form >
+                                </formaction>
+                                <p></p>
+                                <form action "FORMULARIOS" target="blank"><input type="submit" value="Enviar datos"></form>
+                            </center>
+
+
+    <!-- Footer -->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h5>Contact Info</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body"></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a href="#your-link">sergio@uniagustiniana.edu.co</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="media-body"><a href="#your-link">+44 376 945 23</a></div>
+                            </li>
+                        </ul>
+                   
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col fifth">
+                        <span class="fa-stack">
+                            <a href="https://es-la.facebook.com/HoraDeAventuraCapitulosCompletos/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/horadeaventura_?lang=es">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://co.pinterest.com/nelfiflorez/hora-de-aventura/">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/horadeaventuuras/?hl=es">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © 2020 <a href="https://inovatik.com"></a> - All rights reserved</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
